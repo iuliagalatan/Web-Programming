@@ -1,0 +1,24 @@
+body{
+    
+}
+
+.moving-div{
+    background-color: pink;
+    height: 5rem;
+    width:auto;
+    
+    position: absolute;
+    left:5%;
+    top:5%;
+    
+    
+    border: 1px solid white;
+    box-shadow: 5px 6px 5.5px 6px #888888;
+}
+
+p{
+    color:white;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}

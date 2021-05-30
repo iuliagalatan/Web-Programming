@@ -1,0 +1,93 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<div id="parent">
+   <div id = "wrapper">
+    <img id="imgone" class="img" src="https://images.pexels.com/photos/6380128/pexels-photo-6380128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" ></img>
+   </div>
+   <div id = "wrapper">
+       <img id="imgtwo" class="img" src="https://images.pexels.com/photos/2737656/pexels-photo-2737656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" ></img>
+   </div>
+   <div id = "wrapper">
+       <img id="imgthree" class="img"  src="https://images.pexels.com/photos/1840142/pexels-photo-1840142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+   </div>
+   <div id = "wrapper">
+       <img id="imgfour" class="img" src="https://images.pexels.com/photos/937961/pexels-photo-937961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" ></img>
+   </div>
+</div>
+    
+<img id ="fullphoto" >
+</img>
+</html>
+<script>
+$(function(){
+    var images = ['#imgone', '#imgtwo', '#imgthree', '#imgfour'],
+        srcs = ["https://images.pexels.com/photos/6380128/pexels-photo-6380128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "https://images.pexels.com/photos/6739522/pexels-photo-6739522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","https://images.pexels.com/photos/2737656/pexels-photo-2737656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "https://images.pexels.com/photos/4014919/pexels-photo-4014919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "https://images.pexels.com/photos/1840142/pexels-photo-1840142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "https://images.pexels.com/photos/937961/pexels-photo-937961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"],
+         p = 0;
+   
+   $("img").click(clickedImg);
+  // $("body").click(clickedBody);
+   ok = true;
+   
+  
+    function clickedImg() {
+         var content = jQuery(this).attr("id");
+         var contentPanelId = "#"+content;
+        
+        if (ok == true) {
+            ok = false;
+ 
+            $("img").css({
+            "opacity":"0.3"
+          });
+            
+            var imgname = $(contentPanelId).attr("src");
+            //alert(imgname);
+            var img = "url('"+ imgname + "')";
+            
+            $('#fullphoto').css('display', 'block');
+            $('#fullphoto').css('opacity', '1');
+            $('#fullphoto').attr('src', imgname);
+            
+        }
+        else{
+         $('#fullphoto').css('display', 'none');
+         
+          $("img").css({
+            "opacity":"1" });
+          ok = true;
+        }
+    }
+    function nextImage(){
+       
+      if (ok == true) {
+      
+      
+        for(var i = 0; i < 4; i++){
+            
+            if (p >= 5) {
+                p -= 5;
+            }
+            const image = $(images[i]);
+            const im = srcs[p];
+            
+            
+            $("#wrapper").animate({
+            'marginLeft' : "+=50px"
+            });
+          
+            p++;
+           
+            
+        }}
+          setTimeout(nextImage, 2000);
+        
+    }
+    
+    
+    nextImage();
+});
+</script>

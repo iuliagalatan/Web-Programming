@@ -1,0 +1,358 @@
+.appbar-home {
+    display: block;
+    background: rgb(35, 35, 35, .7);
+    height: 40px;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.appbar-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font-family: "Open Sans",Arial,sans-serif!important;
+    background: #eee;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+.svg-inline {
+    display: inline-block;
+    font-size: inherit;
+    height: 0.8em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+.primary-header{
+    text-align: center;
+    float: left;
+    width:8.5%;
+    padding:8px 0px 8px 0px;
+}
+
+.primary-header:hover{
+    background:#40b35d;
+    color:#4d4d4d;
+    }
+
+.primary-header a{
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+a:hover{
+    background:transparent;
+    color:#fff;
+    }
+    
+
+
+
+.tp-search-widget {
+    background: #000 url(banner.jpg)no-repeat center center;
+    min-height: 0px;
+    background-size: cover;
+    
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #3fb35b;
+}
+
+
+.banner-links {
+    background: transparent;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+
+.tp-search-widget h4 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+
+table.gsc-search-box td {
+    vertical-align: middle;
+   
+}
+
+.gsib_a {
+    padding: 5px 9px 4px 9px;
+    width: 100%;
+}
+
+.gsc-input {
+    font-size: 16px;
+}
+
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+     
+}
+
+svg  .gsc-control-cse{
+    color:white;
+}
+
+.gsc-control-cse {
+    font-family: arial, sans-serif;
+    height:50px;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+    width: 90%;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+.gsc-control-cse {
+    padding: 1em;
+}
+.cse .gsc-control-cse, .gsc-control-cse {
+    background-color: transparent!important;
+    border: 0px!important;
+}
+
+.gsc-search-button-v2 {
+    font-size: 0;
+    padding: 6px 27px;
+    vertical-align: middle;
+    border: 1px solid #666;
+    border-radius: 2px;
+    height: 39px;
+    width: 100%;
+    }
+.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+    background-color: #3fb35b!important;
+    border-color: #3eb35a!important;
+    margin:0;
+}
+
+.gsc-control-wrapper-cse {
+    width: 100%;
+}
+
+.google-input{
+    padding: 5px 9px 4px 9px;
+    width: 100%;
+}
+
+
+.gsst_b {
+    font-size: 16px;
+    padding: 0 2px;
+    position: relative;
+    white-space: nowrap;
+}
+.gsst_a {
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+form.gsc-search-box {
+    font-size: 13px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
+    margin-left: 0;
+    width: 100%;
+}
+
+table.gsc-search-box {
+    border-style: none;
+    border-width: 0;
+    border-spacing: 0 0;
+    width: 100%;
+    margin-bottom: 2px;
+    
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+   
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+}
+    
+td.gsc-input {
+    line-height: 38px;
+   
+}
+
+.gsc-input-box {
+    border: 1px solid #dfe1e5;
+    background: #fff;
+    
+    
+}
+
+
+
+.gsc-search-button {
+    background: transparent;
+    width: 1%;
+}
+
+button {
+    appearance: auto;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+   
+   
+   color:white;
+}
+
+.wrapper{
+    width:70%;
+}
+
+#search-box {
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+   
+}
+
+
+
+
+.tp-search-widget .banner-links {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    padding-bottom: 20px;
+}
+
+
+.tp-search-widget .banner-links a {
+    font-size: 22px;
+    color: #fff;
+    margin: 0;
+    padding: 0 2%;
+    text-decoration: none;
+}
+
+  .banner-svg{
+    width: 1.5em;
+    height: 1.5em;
+    color: white;
+}
+
+
+
+
+.links{
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+
+.check_now-btn {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    
+    height: 36px;
+    padding: 0 26px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+
+ 
+    font-size: 14px;
+    font-family: inherit;
+    letter-spacing: .03em;
+    position: relative;
+    overflow: hidden;
+    
+    
+    display: inline-block;
+    margin-bottom:20px;
+    background-color: #3fb35b;
+}
+
+
+.link-container{
+    padding-left: 0px;
+    padding-right: 0px;
+    background:black;
+    width:100%;
+    text-align:center;
+    border-top:2px solid #3fb35b;
+}
+
+
+.offer-image{
+    background:#f6f6f6;
+    width:100%;
+    text-align:center;
+}

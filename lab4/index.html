@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />   
+    <title>Moving Div</title>
+</head>
+<body>
+    <div id="moving-div" class = "moving-div">
+        <p>Hei ! I am a moving div!</p>
+    </div>
+
+</body>
+</html>
+
+
+<script>
+//Make the DIV element draggable:
+dragElement(document.getElementById("moving-div"));
+
+function dragElement(elmnt) {
+    elmnt.onmousedown = dragMouseDown;
+
+    
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    initialx = e.clientX;
+    initialy = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    newx = initialx - e.clientX;
+    newy = initialy - e.clientY;
+    initialx = e.clientX;
+    initialy = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - newy) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - newx) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
